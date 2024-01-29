@@ -2,7 +2,7 @@
 
 - Студент: [Максим](https://up.htmlacademy.ru/htmlcss/39/user/2372963).
 - Наставник: `Неизвестно`.
-- Сайт : (Мой проект седона) https://maxxaos.github.io/2372963-sedona-39/
+- Сайт : (Мой проект седона) (https://maxxaos.github.io/2372963-sedona-39/)
 
 ---
 
