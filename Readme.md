@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Максим](https://up.htmlacademy.ru/htmlcss/39/user/2372963).
-- Наставник: `Неизвестно`.
+- Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
 - Сайт : (Мой проект седона) (https://maxxaos.github.io/2372963-sedona-39/)
 
 ---
