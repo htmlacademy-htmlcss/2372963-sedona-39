@@ -5,11 +5,11 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#"
+            <a class="navigation-logo" href="index.html" aria-current="page"
               ><img class="logo-navigation-list" src="#" alt="Логотип"
             /></a>
           </li>
@@ -39,7 +39,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-list" href="#"
-              ><span class="visually-hidden">Избранное</span></a
+              ><span class="visually-hidden">В избранном</span></a
             >
             <span class="favorite">12</span>
           </li>
@@ -51,16 +51,16 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <section class="main-hero">
-        <h1 class="visually-hidden">Седона: сайт для туристов</h1>
+    <main class="main-index" data-test="main">
+      <section class="main-hero" data-test="hero">
+        <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
         <img
-          class="wellcome"
+          class="hero-image"
           src="#"
           alt="Wellcome to the gorgeous Sedona, because the Grand Canyon sucks! "
         />
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Достоинства города</h2>
         <p class="advantages-hero">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -104,7 +104,7 @@
         </ul>
       </section>
       <section class="services">
-        <h3 class="visually-hidden">Услуги</h3>
+        <h3 class="visually-hidden">Сервис</h3>
         <p class="services-hero">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </p>
@@ -135,7 +135,7 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="hotel-search-title">Заинтересовались?</p>
         <p class="hotel-search-description">
@@ -147,8 +147,8 @@
         >
       </section>
     </main>
-    <footer class="page-footer">
-      <section class="subscribe">
+    <footer class="page-footer" data-test="footer">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!

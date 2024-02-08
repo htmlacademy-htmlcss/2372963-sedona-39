@@ -6,7 +6,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -50,7 +50,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog" data-test="main">
       <header class="main-catalog-header">
         <h1 class="main-catalog-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
@@ -62,7 +62,7 @@
           </li>
         </ol>
       </header>
-      <section class="filters">
+      <section class="filters" data-test="filter">
         <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
         <form
           class="catalog-filter"
@@ -166,7 +166,7 @@
         </select>
         <ul class="catalog-view-mode">
           <li class="catalog-view-mode">
-            <a class="catalog-view-mode-button" href="#"
+            <a class="catalog-view-mode-button selected" href="#"
               ><span class="visually-hidden">Отобразить сеткой</span></a
             >
           </li>
@@ -183,7 +183,7 @@
         </ul>
         <ul class="catalog-products-list">
           <li class="catalog-products-card">
-            <a class="catalog-products-card-link" href="#">
+            <a class="catalog-products-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-products-img"
                 src
@@ -201,7 +201,7 @@
             <p class="catalog-product-rating">8,5</p>
           </li>
           <li class="catalog-products-card">
-            <a class="catalog-products-card-link" href="#">
+            <a class="catalog-products-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-products-img"
                 src
@@ -219,7 +219,7 @@
             <p class="catalog-product-rating">9.2</p>
           </li>
           <li class="catalog-products-card">
-            <a class="catalog-products-card-link" href="#">
+            <a class="catalog-products-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-products-img"
                 src
@@ -237,7 +237,7 @@
             <p class="catalog-product-rating">6,9</p>
           </li>
           <li class="catalog-products-card">
-            <a class="catalog-products-card-link" href="#">
+            <a class="catalog-products-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-products-img"
                 src
@@ -277,8 +277,8 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
-      <section class="subscribe">
+    <footer class="page-footer" data-test="footer">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
