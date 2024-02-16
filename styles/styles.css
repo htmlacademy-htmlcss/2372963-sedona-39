@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  font-family: "PT sans", sans-serif;
+
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  background: #fff;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* Pages */
+
+.page-header {
+  color: #000;
+  background: #fff;
+}
+.navigation-link {
+  color: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.navigation-button {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #756157;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+.favorite {
+  color: #fff;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  background-color: #7db54f;
+}
+
+/*main*/
+
+.main-index {
+  color: #000;
+  background: #fff;
+}
+.main-hero {
+  color: #000;
+  background: #fff;
+  text-align: center;
+  background-image: url(../images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.advantages {
+  color: #000;
+  background: #fff;
+  text-align: center;
+}
+.advantages-hero {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.advantages-about {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantages-columns {
+  color: #000;
+  background-color: #fff;
+}
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  color: #333333;
+}
+
+.services {
+  text-align: center;
+}
+.services-hero {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.services-about {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+}
+.services-columns {
+  color: #000;
+  background-color: #fff;
+}
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.services-list {
+  display: flex;
+  justify-content: space-around;
+}
+.services-description {
+  color: #333333;
+}
+.hotel-search {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  padding: 96px 304px;
+}
+.hotel-search-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.hotel-search-description {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotel-search-button {
+  color: #fff;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #756157;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+/*footer*/
+.page-footer {
+  color: black;
+  background-color: #fff;
+}
+.subscribe {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  background: url(../images/Subscribe.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 96px 258px 104px 258px;
+}
+.subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.field {
+  width: 412px;
+  height: 28px;
+  padding: 12px 20px;
+}
+.subscribe-button {
+  color: #fff;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #82b3d3;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px 70px;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-contacts-phone {
+  color: #000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
