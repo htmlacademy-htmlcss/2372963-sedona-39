@@ -162,8 +162,9 @@
                 </fieldset>
                 <fieldset class="catalog-fieldset">
                   <legend class="catalog-fieldset-title">Стоимость, ₽:</legend>
+                  <div class="catalog-fieldset-ranges">
                   <label class="catalog-fieldset-range"
-                    ><span class="catalog-fieldset-range-input-label">От</span>
+                    ><span class="catalog-fieldset-range-input-label">от</span>
                     <input
                       class="catalog-fieldset-range-input catalog-fieldset-range-input-min"
                       type="number"
@@ -175,9 +176,9 @@
                     />
                   </label>
                   <label class="catalog-fieldset-range"
-                    ><span class="catalog-fieldset-range-input-label">До</span>
+                    ><span class="catalog-fieldset-range-input-label">до</span>
                     <input
-                      class="ccatalog-fieldset-range-input catalog-fieldset-range-input-max"
+                      class="catalog-fieldset-range-input catalog-fieldset-range-input-max"
                       type="number"
                       name="max-price"
                       value="9000"
@@ -185,12 +186,13 @@
                       max="9000"
                       placeholder="9000"
                   /></label>
-                  <div class="scale-inputs">
-                    <div class="scale-bar" style="left: 0; width: 226px">
-                      <button class="scale-toggle scale-toggle-min" type="button">
+                </div>
+                  <div class="range-inputs">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle range-toggle-min" type="button">
                         <span class="visually-hidden">Минимальная цена</span>
                       </button>
-                      <button class="scale-toggle scale-toggle-max" type="button">
+                      <button class="range-toggle range-toggle-max" type="button">
                         <span class="visually-hidden">Максимальная цена</span>
                       </button>
                     </div>
