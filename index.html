@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/brand=sedona.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/brand=sedona.png"
+    />
   </head>
   <body>
     <div class="page-container">
@@ -170,7 +177,7 @@
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="hotel-search-title">Заинтересовались?</p>
           <p class="hotel-search-description">
-            Укажите предполагаемые даты поездки,и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a class="button hotel-search-button" href="#" target="_blank"
@@ -298,13 +305,148 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container">
-      <div class="modal modal-auth">
+    <div class="modal-container main-container-close">
+      <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="modal-search-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="modal-field">
+              <label class="modal-field-label" for="search-date-arr"
+                >Дата заезда:</label
+              >
+              <input
+                class="modal-field-input"
+                type="text"
+                id="search-date-arr"
+                name="date-arr"
+                value="27 апреля 2020"
+                placeholder="Укажите дату заезда"
+                required
+              />
+              <span class="modal-field-massage modal-field-massage-err"
+                >Мы не можем отправить вас в прошлое</span
+              >
+            </p>
+            <p class="modal-field">
+              <label class="modal-field-label" for="search-date-dep"
+                >Дата выезда:</label
+              >
+              <input
+                class="modal-field-input"
+                type="text"
+                id="search-date-dep"
+                name="date-dep"
+                value="1 сентября 2023"
+                placeholder="Укажите дату выезда"
+                required
+              />
+              <span class="modal-field-massage"
+                >На эти даты есть свободные номера. Пока есть.</span
+              >
+            </p>
+            <p class="modal-field modal-field-men">
+              <label class="modal-field-label" for="search-men-adults"
+                >Взрослые:</label
+              >
+              <span class="modal-field-men-number">
+                <button class="modal-field-men-button" type="button">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
+                <input
+                  class="modal-field-men-input"
+                  type="number"
+                  id="search-men-adults"
+                  name="adults"
+                  value="2"
+                  required
+                />
+                <button class="modal-field-men-button" type="button">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <p class="modal-field modal-field-men">
+              <label class="modal-field-label" for="search-men-kids"
+                >Дети:</label
+              >
+              <span class="modal-field-men-info"
+                ><svg
+                  width="2"
+                  height="12"
+                  viewBox="0 0 2 12"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"
+                  /></svg
+              ></span>
+              <span class="modal-field-men-info-massage"
+                >Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
+              >
+              <span class="modal-field-men-number">
+                <button class="modal-field-men-button" type="button">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
+                <input
+                  class="modal-field-men-input"
+                  type="number"
+                  id="search-men-kids"
+                  name="kids"
+                  value="2"
+                  required
+                />
+                <button class="modal-field-men-button" type="button">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
+              </span>
+            </p>
+
+            <button class="button modal-search-button">Найти</button>
+          </form>
+          <p></p>
         </section>
       </div>
     </div>
