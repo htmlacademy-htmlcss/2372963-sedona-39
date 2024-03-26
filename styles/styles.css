@@ -154,14 +154,14 @@ body {
 .navigation-user-item {
   position: relative;
 }
-.navigation-user .navigation-user-item:first-child .navigation-link {
+.navigation-user-item:first-child .navigation-link {
   background-image: url("..//images/icons/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding: 32px 22px;
   background-color: transparent;
 }
-.navigation-user .navigation-user-item:nth-child(2) .navigation-link {
+.navigation-user-item:nth-child(2) .navigation-link {
   background-image: url("..//images/icons/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
