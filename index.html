@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="images/brand=sedona.png" />
+    <link rel="icon" href="brand=sedona.png" />
     <link
       rel="icon"
       type="image/png"
@@ -87,7 +87,7 @@
 
           <ul class="advantages-list list-reset">
             <li class="advantages-list-item advantages-item-picture">
-              <div class="advantages-list-item-container">
+              <div class="advantages-list-item-container-picture">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
@@ -126,8 +126,8 @@
               </div>
             </li>
             <li class="advantages-list-item advantages-item-picture reversed">
-              <div class="advantages-list-item-container">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <div class="advantages-list-item-container-picture">
+                <h3 class="advantages-title">Там есть <br />мост дьявола</h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -153,22 +153,24 @@
 
           <ul class="services-list list-reset">
             <li class="services-list-item services-item-dark">
-              <h3 class="services-title">Жилье</h3>
+              <h3 class="services-title">Жильё</h3>
               <p class="services-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить<br />
+                в настоящем мотеле,<br />всё как в кино!
               </p>
             </li>
             <li class="services-list-item">
               <h3 class="services-title">Еда</h3>
               <p class="services-description">
-                Всегда заказывайте топовый фирменный бургер, вы не
+                Всегда заказывайте <br />топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="services-list-item services-item-dark">
               <h3 class="services-title">Сувениры</h3>
               <p class="services-description">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского, <br />но и настоящего местного
+                производства!
               </p>
             </li>
           </ul>
@@ -189,7 +191,8 @@
         <section class="subscribe subscribe-index" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское!
           </p>
           <form
             class="subscribe-form"
@@ -305,7 +308,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container main-container-close">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -392,8 +395,8 @@
               <label class="modal-field-label" for="search-men-kids"
                 >Дети:</label
               >
-              <span class="modal-field-men-info"
-                ><svg
+              <button class="modal-field-men-info" type="button">
+                <svg
                   width="2"
                   height="12"
                   viewBox="0 0 2 12"
@@ -404,8 +407,9 @@
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"
-                  /></svg
-              ></span>
+                  />
+                </svg>
+              </button>
               <span class="modal-field-men-info-massage"
                 >Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
@@ -444,7 +448,9 @@
               </span>
             </p>
 
-            <button class="button modal-search-button">Найти</button>
+            <button class="button modal-search-button" type="submit">
+              Найти
+            </button>
           </form>
           <p></p>
         </section>

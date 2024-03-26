@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="images/brand=sedona.png" />
+    <link rel="icon" href="brand=sedona.png" />
     <link
       rel="icon"
       type="image/png"
@@ -91,11 +91,12 @@
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-option"
                         ><input
-                          class="catalog-filter-option-input"
+                          class="visually-hidden catalog-filter-option-input"
                           type="checkbox"
                           name="pool"
                           checked
-                        /><span class="catalog-filter-option-name"
+                        /><span class="catalog-filter-option-mark"></span
+                        ><span class="catalog-filter-option-name"
                           >Бассейн</span
                         ></label
                       >
@@ -103,11 +104,12 @@
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-option"
                         ><input
-                          class="catalog-filter-option-input"
+                          class="catalog-filter-option-input visually-hidden"
                           type="checkbox"
                           name="parking"
                           checked
-                        /><span class="catalog-filter-option-name"
+                        /><span class="catalog-filter-option-mark"></span
+                        ><span class="catalog-filter-option-name"
                           >Парковка</span
                         ></label
                       >
@@ -115,11 +117,12 @@
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-option"
                         ><input
-                          class="catalog-filter-option-input"
+                          class="catalog-filter-option-input visually-hidden"
                           type="checkbox"
                           name="Wi-fi"
-                        /></span><span class="catalog-filter-option-name"
-                          >Wi-fi</span
+                        /><span class="catalog-filter-option-mark"></span
+                        ><span class="catalog-filter-option-name"
+                          >Wi-Fi</span
                         ></label
                       >
                     </li>
@@ -131,12 +134,13 @@
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-option"
                         ><input
-                          class="catalog-filter-option-input"
+                          class="catalog-filter-option-input visually-hidden"
                           type="radio"
                           name="house-type"
                           value="hotel"
                           checked
-                        /><span class="catalog-filter-option-name"
+                        /><span class="catalog-filter-option-mark"></span
+                        ><span class="catalog-filter-option-name"
                           >Гостиница</span
                         ></label
                       >
@@ -144,11 +148,13 @@
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-option"
                         ><input
-                          class="catalog-filter-option-input"
+                          class="catalog-filter-option-input visually-hidden"
                           type="radio"
                           name="house-type"
                           value="motel"
-                        /><span class="catalog-filter-option-name"
+                        />
+                        <span class="catalog-filter-option-mark"></span>
+                        <span class="catalog-filter-option-name"
                           >Мотель</span
                         ></label
                       >
@@ -156,11 +162,12 @@
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-option"
                         ><input
-                          class="catalog-filter-option-input"
+                          class="catalog-filter-option-input visually-hidden"
                           type="radio"
                           name="house-type"
                           value="apartament"
-                        /><span class="catalog-filter-option-name"
+                        /><span class="catalog-filter-option-mark"></span
+                        ><span class="catalog-filter-option-name"
                           >Апартаменты</span
                         ></label
                       >
@@ -170,41 +177,50 @@
                 <fieldset class="catalog-fieldset">
                   <legend class="catalog-fieldset-title">Стоимость, ₽:</legend>
                   <div class="catalog-fieldset-ranges">
-                  <label class="catalog-fieldset-range"
-                    ><span class="catalog-fieldset-range-input-label">от</span>
-                    <input
-                      class="catalog-fieldset-range-input catalog-fieldset-range-input-min"
-                      type="number"
-                      name="min-price"
-                      value="0"
-                      min="0"
-                      max="8999"
-                      placeholder="0"
-                    />
-                  </label>
-                  <label class="catalog-fieldset-range"
-                    ><span class="catalog-fieldset-range-input-label">до</span>
-                    <input
-                      class="catalog-fieldset-range-input catalog-fieldset-range-input-max"
-                      type="number"
-                      name="max-price"
-                      value="9000"
-                      min="0"
-                      max="9000"
-                      placeholder="9000"
-                  /></label>
-                </div>
+                    <label class="catalog-fieldset-range"
+                      ><span class="catalog-fieldset-range-input-label"
+                        >от</span
+                      >
+                      <input
+                        class="catalog-fieldset-range-input catalog-fieldset-range-input-min"
+                        type="number"
+                        name="min-price"
+                        value="0"
+                        min="0"
+                        max="8999"
+                        placeholder="0"
+                      />
+                    </label>
+                    <label class="catalog-fieldset-range"
+                      ><span class="catalog-fieldset-range-input-label"
+                        >до</span
+                      >
+                      <input
+                        class="catalog-fieldset-range-input catalog-fieldset-range-input-max"
+                        type="number"
+                        name="max-price"
+                        value="9000"
+                        min="0"
+                        max="9000"
+                        placeholder="9000"
+                    /></label>
+                  </div>
                   <div class="range-inputs">
-                    <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle range-toggle-min" type="button">
+                    <div class="range-bar" style="left: 0; width: 207px">
+                      <button
+                        class="range-toggle range-toggle-min"
+                        type="button"
+                      >
                         <span class="visually-hidden">Минимальная цена</span>
                       </button>
-                      <button class="range-toggle range-toggle-max" type="button">
+                      <button
+                        class="range-toggle range-toggle-max"
+                        type="button"
+                      >
                         <span class="visually-hidden">Максимальная цена</span>
                       </button>
                     </div>
                   </div>
-                </fieldset>
                 </fieldset>
                 <div class="catalog-filter-button">
                   <button class="button apply-button" type="submit">
@@ -223,7 +239,8 @@
           <div class="catalog-products-container">
             <header class="catalog-products-header">
               <h2 class="catalog-products-title">
-                Найдено страниц: <span class="catalog-products-result">38</span>
+                Найдено гостиниц:
+                <span class="catalog-products-result">38</span>
               </h2>
               <select
                 class="catalog-products-select"
@@ -240,16 +257,21 @@
                     type="button"
                   >
                     <span class="visually-hidden"> Отобразить сеткой </span>
-                     </button>
-                </li>
-                <li class="catalog-view-mode-item">
-                  <button class="view-mode-button veiw-mode-button-card" type="button">
-                    <span class="visually-hidden"> Отобразить карточками </span>
-                     </button>
-                </li>
-                <li class="catalog-view-mode-item">
-                  <button class="view-mode-button view-mode-button-list" type="button">
                   </button>
+                </li>
+                <li class="catalog-view-mode-item">
+                  <button
+                    class="view-mode-button veiw-mode-button-card"
+                    type="button"
+                  >
+                    <span class="visually-hidden"> Отобразить карточками </span>
+                  </button>
+                </li>
+                <li class="catalog-view-mode-item">
+                  <button
+                    class="view-mode-button view-mode-button-list"
+                    type="button"
+                  ></button>
                 </li>
               </ul>
             </header>
@@ -272,7 +294,9 @@
                 <button class="button catalog-product-favorite" type="button">
                   в избранное
                 </button>
-                <p class="catalog-product-stars catalog-product-stars-four"><span class="visually-hidden">4 звезды</span></p>
+                <p class="catalog-product-stars catalog-product-stars-four">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
                 <p class="catalog-product-rating">Рейтинг: 8,5</p>
               </li>
               <li class="catalog-products-card">
@@ -295,7 +319,9 @@
                 >
                   в избранном
                 </button>
-                <p class="catalog-product-stars catalog-product-stars-four"><span class="visually-hidden">4 звезды</span></p>
+                <p class="catalog-product-stars catalog-product-stars-four">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
                 <p class="catalog-product-rating">Рейтинг: 9,2</p>
               </li>
               <li class="catalog-products-card">
@@ -315,7 +341,9 @@
                 <button class="button catalog-product-favorite" type="button">
                   в избранное
                 </button>
-                <p class="catalog-product-stars catalog-product-stars-three"><span class="visually-hidden">3 звезды</span></p>
+                <p class="catalog-product-stars catalog-product-stars-three">
+                  <span class="visually-hidden">3 звезды</span>
+                </p>
                 <p class="catalog-product-rating">Рейтинг: 6,9</p>
               </li>
               <li class="catalog-products-card">
@@ -335,7 +363,9 @@
                 <button class="button catalog-product-favorite" type="button">
                   в избранное
                 </button>
-                <p class="catalog-product-stars catalog-product-stars-two"><span class="visually-hidden">2 звезды</span></p>
+                <p class="catalog-product-stars catalog-product-stars-two">
+                  <span class="visually-hidden">2 звезды</span>
+                </p>
                 <p class="catalog-product-rating">Рейтинг: 5,0</p>
               </li>
             </ul>
@@ -355,7 +385,7 @@
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">4</a>
                 </li>
-                <li class="pagination-item ">
+                <li class="pagination-item">
                   <a class="pagination-link pagination-link-other">...</a>
                 </li>
                 <li class="pagination-item">
@@ -370,7 +400,8 @@
         <section class="subscribe subscribe-catalog" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">
-            Только полезная информация и никакого спама,<br/> честное бойскаутское!
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское!
           </p>
           <form
             class="subscribe-form"
