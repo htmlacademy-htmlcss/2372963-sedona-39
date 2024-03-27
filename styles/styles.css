@@ -189,6 +189,7 @@ body {
   background-color: #756157;
 }
 .navigation-link-button:disabled {
+  pointer-events: none;
   background-color: #e5e5e5;
 }
 
@@ -885,6 +886,7 @@ body {
 }
 .apply-button:focus-visible {
   background-color: #68a2ca;
+  outline: none;
 }
 .apply-button:active {
   background-color: #82b3d3;
@@ -1078,6 +1080,7 @@ body {
   background-color: #756157;
 }
 .catalog-product-about:disabled {
+  pointer-events: none;
   background-color: #e5e5e5;
 }
 .catalog-product-favorite {
@@ -1106,6 +1109,7 @@ body {
 }
 .catalog-product-favorite:disabled {
   background-color: #e5e5e5;
+  pointer-events: none;
 }
 .catalog-product-stars {
   margin: auto 0;
@@ -1179,6 +1183,12 @@ body {
   background-color: inherit;
   pointer-events: none;
 }
+.pagination-link-current {
+  color: #000000;
+  background: #f2f2f2;
+  pointer-events: none;
+}
+
 .pagination-link:hover {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3;
@@ -1192,13 +1202,9 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-link-current {
-  color: #000000;
-  background: #f2f2f2;
-  pointer-events: none;
-}
 .modal-container {
   position: fixed;
+  display: flex;
   inset: 0;
   width: 100%;
   height: 100%;
