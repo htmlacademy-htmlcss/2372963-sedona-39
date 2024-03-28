@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" href="favicon.ico" />
-    <!-- 32×32 -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
     <div class="page-container">
@@ -29,13 +29,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a
-                class="navigation-link"
-                href="catalog.html"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Гостиницы</a
-              >
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user list-reset">
@@ -177,7 +171,7 @@
             Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <a class="button hotel-search-button" href="#" target="_blank"
+          <a class="button hotel-search-button" href="catalog.html"
             >Поиск гостиницы в Седоне</a
           >
         </section>
@@ -285,7 +279,12 @@
           <a class="footer-contacts-phone" href="tel:+78128121212"
             >+7 (812) 812-12-12</a
           >
-          <a class="footer-logo" href="https://htmlacademy.ru/">
+          <a
+            class="footer-logo"
+            href="https://htmlacademy.ru/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <span class="visually-hidden">Сайт Академии</span>
             <svg
               aria-hidden="true"
@@ -305,8 +304,19 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
+            />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -355,6 +365,9 @@
               >
               <span class="modal-field-men-number">
                 <button class="modal-field-men-button" type="button">
+                  <span class="visually-hidden"
+                    >Уменьшить количество человек</span
+                  >
                   <svg
                     width="20"
                     height="20"
@@ -374,6 +387,9 @@
                   required
                 />
                 <button class="modal-field-men-button" type="button">
+                  <span class="visually-hidden"
+                    >Увеличить количество человек</span
+                  >
                   <svg
                     width="20"
                     height="20"
@@ -411,6 +427,9 @@
               >
               <span class="modal-field-men-number">
                 <button class="modal-field-men-button" type="button">
+                  <span class="visually-hidden"
+                    >Уменьшить количество человек</span
+                  >
                   <svg
                     width="20"
                     height="20"
@@ -430,6 +449,9 @@
                   required
                 />
                 <button class="modal-field-men-button" type="button">
+                  <span class="visually-hidden"
+                    >Увеличить количество человек</span
+                  >
                   <svg
                     width="20"
                     height="20"
